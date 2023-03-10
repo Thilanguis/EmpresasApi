@@ -170,7 +170,7 @@ public class EmpresasController {
 
 	}
 
-	@ApiOperation("Método para realizar a consulta de uma empresa")
+	@ApiOperation("Método para realizar a consulta de uma empresa baseado no id")
 	@RequestMapping(value = ENDPOINT + "/{idEmpresa}", method = RequestMethod.GET)
 
 	public ResponseEntity<Empresa> getById(@PathVariable("idEmpresa") Integer idEmpresa) {
